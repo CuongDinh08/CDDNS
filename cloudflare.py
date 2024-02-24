@@ -87,6 +87,7 @@ class Cloudflare:
                         "content": current_ipv4,
                         "name": each_cloudflare_dns["name"],
                         "type": "A",
+                        "proxied": each_cloudflare_dns["proxied"],
                     },
                 )
                 if response.status_code != 200:
