@@ -57,6 +57,9 @@ def main():
         except KeyboardInterrupt:
             logger.info("Exiting...")
             exit(0)
+    else:
+        # Reset error count
+        error_count = 0
 
 
 if __name__ == "__main__":
